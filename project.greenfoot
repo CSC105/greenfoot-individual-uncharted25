@@ -1,0 +1,14 @@
+#Greenfoot properties
+#Mon Feb 26 02:07:59 ICT 2018
+class.Flamingo.image=Flamingo1.png
+mainWindow.width=850
+class.Bg.image=space.jpg
+project.charset=UTF-8
+version=3.0.0
+world.lastInstantiated=Main
+class.Bg.superclass=greenfoot.World
+class.Flamingo.superclass=greenfoot.Actor
+mainWindow.y=40
+mainWindow.x=40
+class.Main.superclass=greenfoot.World
+mainWindow.height=600
