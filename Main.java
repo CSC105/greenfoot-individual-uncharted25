@@ -10,7 +10,7 @@ public class Main extends World
 {
     //private boolean start = false;
     private GreenfootImage main;
-    //static GreenfootSound s = new GreenfootSound("Shades of Grey");
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,17 +19,15 @@ public class Main extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(640, 480, 1); 
-        checkKeypress();
+        
         main = new GreenfootImage ("main.jpg");
         setBackground(main);
     }
-    public void checkKeypress() {        
+    public void act() {        
    
    if (Greenfoot.isKeyDown("enter"))
    {
-       
-      Bg w1 = new Bg();
-      Greenfoot.setWorld(w1);
+       Greenfoot.setWorld(new Bg());
       
     }
 }

@@ -13,8 +13,8 @@ public class Flamingo extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Flamingo(){
-        
     addPic();
+   
 }
     public void act() 
     {
@@ -22,10 +22,10 @@ public class Flamingo extends Actor
     }
     public  void addPic()
     {
-       for(int i = 0; i < 34; i++)
+       for(int i = 1; i < 35; i++)
        {
             GreenfootImage img = new GreenfootImage("Flamingo"+i+".png");
-            img.scale(100,200);
+            img.scale(70,70);
             
        }
     }
