@@ -20,6 +20,6 @@ public class Bg extends World
         bg = new GreenfootImage ("blender_3d_hologram_by_logichy.jpg");
         setBackground(bg);
         Flamingo flamingo = new Flamingo();
-        addObject(flamingo,getWidth()/2,350);
+        addObject(flamingo,50,350);
     }
 }
