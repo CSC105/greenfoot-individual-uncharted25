@@ -16,7 +16,8 @@ public class ScoreCounter extends Actor
      */
     public void act() 
     {
-        setImage(new GreenfootImage(" "+score, 30, greenfoot.Color.RED, bg));
+        setImage(new GreenfootImage("Score: "+score, 30, greenfoot.Color.WHITE, bg));
+        
     }
    
     public void setScore(int number){
