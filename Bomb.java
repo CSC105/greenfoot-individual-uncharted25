@@ -14,6 +14,9 @@ public class Bomb extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        setLocation(getX()-10, getY());
+         if(isAtEdge()){
+            getWorld().removeObject(this);
+        }
     }    
 }
