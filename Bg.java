@@ -17,8 +17,7 @@ public class Bg extends World
     int randomDelay = Greenfoot.getRandomNumber(200);
     int randomObject;
     int count = 0;
-    static int add;
-    static Counter actCounter = new Counter("Scores: ");
+    Counter actCounter = new Counter("Scores: ");
     /**
      * Constructor for objects of class Bg.
      * 
@@ -61,8 +60,7 @@ public class Bg extends World
         } else {
             count++;
         }
-        actCounter.add(add);
-        add = 0;
+       
     }
 
     public void music(){
