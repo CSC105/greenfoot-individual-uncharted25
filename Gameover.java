@@ -8,13 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Gameover extends World
 {
-    private Counter actCounter;
+    
     private GreenfootImage bg;
     static GreenfootSound g = new GreenfootSound("gameover.mp3");
     public boolean sound = false;
     private boolean start = false;
     Bg b = new Bg();
-    //Counter actCounter = new Counter("Scores: ");
+    Counter actCounter = new Counter("Scores: ");
     static int add;
     /**
      * Constructor for objects of class Gaveover.
@@ -40,8 +40,7 @@ public class Gameover extends World
            Greenfoot.setWorld(new Bg());
       
     }
-        actCounter.add(add);
-        add = 0;
+        
     }
     public void music(){
       g.playLoop();
