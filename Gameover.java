@@ -28,7 +28,7 @@ public class Gameover extends World
         setBackground(bg);
         Bg.stopmusic();
         music();
-        addObject(new Counter(actCounter.getValue()), 320, 60);
+        
         
     }
     public void act(){

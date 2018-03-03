@@ -1,12 +1,14 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+FLAMINGO README file. 
+- Description
+- Instruction
 ------------------------------------------------------------------------
 
 PROJECT TITLE: Flamingo Adventure
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
+PURPOSE OF PROJECT: Player can practice their rapidity skill
+VERSION or DATE: BETA (3rd, March 2018)
+HOW TO START THIS PROJECT: Player press run on Greenfoot first then press enter to play the game.
 AUTHORS: Natthanon Puntanee
-USER INSTRUCTIONS:
+USER INSTRUCTIONS: Player can control a flamingo by press arrow key ("up and down"). Player must collect item(s) such as coin and banana. If player hit the bomb, player will be lose thegame
+GRADING: - Banana worth 100 points
+         - Coin worth 500 points
