@@ -1,6 +1,6 @@
 #Greenfoot properties
-#Sat Mar 03 21:42:48 ICT 2018
-editor.fx.0.height=0
+#Sat Mar 03 22:14:28 ICT 2018
+editor.fx.0.height=1056
 target2.width=80
 target8.name=ScoreCounter
 target11.y=0
@@ -78,8 +78,8 @@ dependency7.type=UsesDependency
 dependency21.from=Bomb
 target11.type=ClassTarget
 version=3.0.0
-editor.fx.0.y=0
-editor.fx.0.x=0
+editor.fx.0.y=-8
+editor.fx.0.x=-8
 dependency15.from=Flamingo
 dependency6.to=Coin
 target2.showInterface=false
@@ -101,7 +101,7 @@ target6.name=Gameover
 target9.height=50
 dependency23.to=Gameover
 dependency10.type=UsesDependency
-editor.fx.0.width=0
+editor.fx.0.width=1936
 target11.showInterface=false
 dependency20.type=UsesDependency
 target10.y=0

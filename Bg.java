@@ -17,7 +17,7 @@ public class Bg extends World
     int randomDelay = Greenfoot.getRandomNumber(200);
     int randomObject;
     int count = 0;
-    Counter actCounter = new Counter("Scores: ");
+    static Counter actCounter = new Counter("Scores: ");
     /**
      * Constructor for objects of class Bg.
      * 
@@ -30,11 +30,10 @@ public class Bg extends World
         Flamingo flamingo = new Flamingo();
         addObject(flamingo,50,330);
         addObject(actCounter, 320, 60);
-        
         Gameover.stopmusic();
     }
 
-    public void Animated(){
+    public void animated(){
         setBackground(bg.getCurrentImage());
     }
 
@@ -43,10 +42,9 @@ public class Bg extends World
             start = true;
             music();
         }
-        Animated();
+        animated();
         randomY = Greenfoot.getRandomNumber(480);
         randomObject = Greenfoot.getRandomNumber(3);
-        
         if(count==randomDelay){
             if(randomObject == 0){
                 addObject(new Coin(), 639, randomY);
@@ -59,8 +57,7 @@ public class Bg extends World
             count = 0;
         } else {
             count++;
-        }
-       
+        }       
     }
 
     public void music(){
@@ -72,8 +69,7 @@ public class Bg extends World
         dejavu.stop();
     }
    public void addScore(int score){
-       actCounter.setValue(actCounter.getValue() + score);
-       
+       actCounter.setValue(actCounter.getValue() + score); 
     }
 }
 

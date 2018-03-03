@@ -14,8 +14,7 @@ public class Gameover extends World
     public boolean sound = false;
     private boolean start = false;
     Bg b = new Bg();
-    Counter actCounter = new Counter("Scores: ");
-    static int add;
+    Counter lastScore = Bg.actCounter;
     /**
      * Constructor for objects of class Gaveover.
      * 
@@ -28,7 +27,7 @@ public class Gameover extends World
         setBackground(bg);
         Bg.stopmusic();
         music();
-        addObject(actCounter, 320, 60);
+        addObject(lastScore, 320, 60);
         
     }
     public void act(){
@@ -38,7 +37,7 @@ public class Gameover extends World
         }
        if (Greenfoot.isKeyDown("enter")){
            Greenfoot.setWorld(new Bg());
-      
+           lastScore.setValue(0);
     }
         
     }
