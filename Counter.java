@@ -54,6 +54,7 @@ public class Counter extends Actor
         this.prefix = prefix;
         updateImage();
     }
+
     
     /**
      * Animate the display to count up (or down) to the current target value.
@@ -68,6 +69,7 @@ public class Counter extends Actor
             value--;
             updateImage();
         }
+        
     }
 
     /**
@@ -112,8 +114,9 @@ public class Counter extends Actor
      */
     private void updateImage()
     {
-        GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage(prefix + value, 22, Color.BLACK, transparent);
+        GreenfootImage image = new GreenfootImage("bb.png");
+        image.scale(100, 50);
+        GreenfootImage text = new GreenfootImage(prefix + value, 22, Color.RED, transparent);
         
         if (text.getWidth() > image.getWidth() - 20)
         {

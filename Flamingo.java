@@ -12,10 +12,13 @@ public class Flamingo extends Actor
     private int  time  = 0;
     private List<GreenfootImage> list = new ArrayList<GreenfootImage>();
     private GreenfootImage[] img = new GreenfootImage[37];
-    
+    GreenfootSound c = new GreenfootSound("MarioCoin.wav");
+    GreenfootSound b = new GreenfootSound("Explosion.wav");
+    GreenfootSound a = new GreenfootSound("banana.mp3");
+    Counter count = new Counter();
+    //ScoreCounter sc = new ScoreCounter();
     public Flamingo(){
         addPic();
-   
 }
     public void act() 
     {
@@ -26,10 +29,25 @@ public class Flamingo extends Actor
         if(Greenfoot.isKeyDown("down")){
             setLocation(getX(), getY()+5);
         }
+            if(isTouching(Bomb.class)){
+            b.play();
+            removeTouching(Bomb.class);
+            Greenfoot.setWorld(new Gameover());
+           
+            }
+            if(isTouching(Coin.class)){
+            c.play();
+            ((Bg) getWorld()).addScore(500);
             removeTouching(Coin.class);
-            removeTouching(Banana.class);
             
-        
+            }
+            if(isTouching(Banana.class)){
+                a.play();
+                ((Bg) getWorld()).addScore(100);
+                removeTouching(Banana.class);
+               
+            }
+       
      
     }
   
@@ -44,8 +62,7 @@ public class Flamingo extends Actor
         }
        
     }
-    public  void addPic()
-    {
+    public  void addPic(){ //Using ArrayList to store Flamingo images
        for(int i = 1; i <=36 ; i++)
        {
             GreenfootImage img = new GreenfootImage("Flamingo"+i+".png");

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ScoreCounter extends Actor
 {
-    static int score = 0;
+    public static int score = 0;
     Color bg = new Color(255,0,0);
     /**
      * Act - do whatever the ScoreCounter wants to do. This method is called whenever
@@ -21,12 +21,10 @@ public class ScoreCounter extends Actor
     }
    
     public void setScore(int number){
-        score = number;
+        score += number;
     }
     public static int getScore(){
         return score;
     }
-    public void scoreIncrement(){
-        score++;
-    }
+    
 }

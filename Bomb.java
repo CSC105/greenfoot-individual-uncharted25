@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bomb extends Actor
 {
+    GreenfootSound b = new GreenfootSound("Explosion.wav");
     /**
      * Act - do whatever the Bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,5 +19,9 @@ public class Bomb extends Actor
          if(isAtEdge()){
             getWorld().removeObject(this);
         }
+         /*if(isTouching(Flamingo.class)){
+            b.play();
+            Greenfoot.setWorld(new Gameover());
+            }*/
     }    
 }
